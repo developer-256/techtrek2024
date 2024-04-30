@@ -3,7 +3,6 @@ import React from 'react';
 import CountdownTimer from './countdown';
 import Image from 'next/image';
 import { Button } from '../ui/button';
-import Link from 'next/link';
 
 const HeroSection = () => {
     return (
@@ -21,7 +20,7 @@ const HeroSection = () => {
                     <CountdownTimer eventDate={"05-3-2024"} />
                 </div>
                 <div className="absolute bottom-20">
-                    <Link href={"https://forms.gle/3BPpBT5rpNPgYV3z6"}><Button>Hello</Button></Link>
+                    <Button />
                 </div>
             </div>
             <div className="h-[800px] w-[800px] bg-myPnk ">
