@@ -30,7 +30,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <main className="relative flex flex-col min-h-screen">
+        <main className="relative flex flex-col min-h-screen bg-darkPurple">
           <Navbar />
           <div className="flex-grow flex-1">{children}</div>
           <Footer />
