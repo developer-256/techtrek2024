@@ -7,7 +7,7 @@
 // import Abouthome from "@/assets/Images/AboutImages/homepage.png";
 // import OrganicImage from "@/assets/Images/AboutImages/organicfoodcrop.png";
 // import DeleiveryImage from "@/assets/Images/AboutImages/deleiveryimage.png";
-
+import speaker1 from "@/assets/images/RoshanKaleem.jpg"
 
 
 // =====> This is your main object that you will import within files
@@ -46,6 +46,13 @@
 //     },
 //   },
 // };
+
+export const ImageAssets = {
+    Speakers: {
+        img: speaker1,
+        alt: "Roshan"
+    }
+}
 
 // =====> If you want to add static svg that you copied paste it within return and add className={`w-4 h-4 ${className}`}
 
