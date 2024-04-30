@@ -5,7 +5,7 @@ import { fields1 } from '@/data/rounds_data';
 
 const EventSchedule = () => {
     return (
-        <section className="py-12 bg-darkurple">
+        <section className="py-12 bg-darkurple" id='about'>
             <div className="container mx-auto px-4">
                 {/* Schedule Header */}
                 <h2 className="text-3xl font-bold text-white mb-6">Event Schedule</h2>

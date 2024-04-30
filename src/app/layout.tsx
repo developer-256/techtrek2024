@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google"
+import { Inter as FontSans, Montserrat } from "next/font/google"
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/NavbarAndFooterComponents/Navbar";
@@ -10,6 +10,12 @@ const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 })
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 
 export const metadata: Metadata = {
   title: "Tech Trek",
@@ -26,8 +32,8 @@ export default function RootLayout({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body
         className={cn(
-          "relative h-full font-Poppins antialiased",
-          fontSans.variable
+          "relative h-full font-Montserrat antialiased",
+          fontSans.variable, montserrat.className
         )}
       >
         <main className="relative flex flex-col min-h-screen bg-darkPurple">
